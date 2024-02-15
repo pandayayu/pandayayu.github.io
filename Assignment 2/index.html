@@ -1,11 +1,11 @@
-<!--
+<!---------------------------------------
     Name: Ayush Panday
     Course: INFT-1206-05-Web Development Fundamentals
     Date: 12th February 2024
     -------------------------------------
     Assignment 2: Multimedia and Embedding
     -------------------------------------
--->
+------------------------------------------>
 
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
 
       html {
         font-family: 'Open Sans', sans-serif;
-        background: url(pattern.png);
+        background : url(pattern.png)
       }
 
       body {
@@ -109,6 +109,7 @@
   <body>
     <header>
       <h1>Mozilla</h1>
+      <img src = "firefox_logo_only_120.png" alt = "firefox logo 120">
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
 
@@ -117,6 +118,15 @@
     <main>
       <article>
         <!-- insert iframe from youtube -->
+        <main>
+          <article>
+              <!-- insert iframe from youtube -->
+              <iframe width="400" height="300" 
+              src="https://www.youtube.com/embed/ojcNcvb1olg"
+              title="YouTube video player"
+              frameborder ="0"
+              allowfullscreen></iframe>
+              <!--Reference: https://stackoverflow.com/questions/7281765/how-to-embed-an-autoplaying-youtube-video-in-an-iframe-->
 
         <h2>Rocking the free web</h2>
 
@@ -128,22 +138,50 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+          srcset="firefox_logo_only_120.png 120w, firefox_logo_only_400.png 400w"
+          sizes="(max-width: 400px) 120px, 400px"
+          src="firefox_logo_only_400.png"
+          alt="firefox logo">
+          
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img 
+          srcset ="mozilla-dinosaur-head_120.png 120w,mozilla-dinosaur-head_400.png 400w"
+          sizes="(max-width:500px) 120px,400px"
+          src="mozilla-dinosaur-head_400.png"
+          alt ="dianosaur head picture">
+        
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img 
+          srcset="firefox-addons_120.jpg 120w, firefox-addons_400.jpg 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="firefox-addons_400.jpg"
+          alt="firefox browser add-ons" >
+         
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img 
+          srcset="mdn.svg 120w, mdn.svg 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="mdn.svg"
+          alt="This is resources for developers">
+
+          
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+          <source media="(max-width:600px)"
+          srcset="red-panda600.jpg">
+         <img src="red-panda1200.jpg" alt="Red Panda" >
+        </picture>
+
+        
       </div>
 
     </main>
