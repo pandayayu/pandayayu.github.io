@@ -8,10 +8,17 @@
   </head>
   <body>
     <h1>Table template</h1>
+
     <table>
+        <colgroup>
+            <col span="2">
+            <col style="border: 2px solid black;">
+            <!--Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup-->
+        </colgroup>
         <caption>Data about the planets of our solar system (Planetary facts taken from 
             <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
             <tr>
+                <td colspan="2"></td>
                 <th>Name</th>
                 <th>Mass(10 <sup>24</sup> kg)</th>
                 <th>Diameter(km)</th>
@@ -26,24 +33,50 @@
 
             <!--adding the rows-->
             <tr>
-                <td rowspan ="4">Terrestial Planets</td>
-                    <td>Mercury</td>
+                <th rowspan ="4" colspan="2">Terrestial Planets</th>
+                    <th>Mercury</th>
+                        <td>0.330 </td>
+                        <td>4,879</td>
+                        <td> 5427</td> 
+                        <td>3.7 </td>
+                        <td>4222.6</td> 
+                        <td>57.9</td>
+                        <td>167</td>
+                        <td>0</td>
+                        <td>Closest to the Sun</td>
             </tr>
             <tr>
-                <td>Venus</td>
+                <th>Venus</th>
             </tr>
             <tr>
-                <td>Earth</td>
+                <th>Earth</th>
             </tr>
             <tr>
-                <td>Mars</td>
+                <th>Mars</th>
             </tr>
 
             <tr>
-                <td rowspan = "4">Jovian Planets</td>
-                <td rowspan="2">Gas Planets</td>
-                <td rowspan="2">Ice Planets</td>
+                <th rowspan = "4">Jovian Planets</th>
+                <th rowspan="2">Gas Giants</th>
+                <th>Jupiter</th>
             </tr>
+            <tr>
+                <th>Saturn</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Ice Giants</th>
+                <th>Uranus</th>
+            </tr>
+            <tr>
+            <th>Neptune</th>
+            <td></td>
+            <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">Dwarf Planet</th>
+                <th>Pluto</th>
+            </tr>
+            
             
     </table>
 
