@@ -22,7 +22,10 @@
     width: 30%;
   }
   
-  
+  nav {
+    float: left;
+    width: 20%;
+  }
   
   footer {
     clear: both;
