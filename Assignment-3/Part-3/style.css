@@ -42,4 +42,13 @@
     border-bottom: 5px solid #a66;
   }
   
-  
+  /* WRITE YOUR CODE BELOW HERE
+
+  /*importing the required fonts*/
+  /*REFERENCE: https://fonts.google.com/knowledge/using_type/using_web_fonts*/
+  @font-face {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'PT Serif', serif;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind+Madurai:wght@300&family=PT+Serif&display=swap');
+  }
