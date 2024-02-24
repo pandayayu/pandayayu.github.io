@@ -1,0 +1,33 @@
+html {
+    font-family: sans-serif;
+  }html {
+    font-family: sans-serif;
+  }
+  
+  div {
+    /* determining the size and the position */
+    width: 200px;
+    margin: auto;
+    line-height: 9;
+    
+    /*determining the font size*/
+    font-size: 1.2rem;
+
+    /*tex alignment and color*/
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    
+    /*border and bckground color and specifying the border radius*/
+    border-radius: 10px;
+    border: 1px solid #990000;
+    background-color: red;
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    
+  }
+  
