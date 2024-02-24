@@ -52,3 +52,84 @@
     font-family: 'PT Serif', serif;
     src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind+Madurai:wght@300&family=PT+Serif&display=swap');
   }
+  
+
+  /*setting page font size*/
+  html{font-size: 10px;}
+
+  /*setting line height for body alongside specifying the font and giving letter-space and word-space*/
+  body{
+    line-height: 1.2;
+    font-family:'Hind Madurai', sans-serif;
+    letter-spacing: 0.4px; 
+    word-spacing: 0.4px;   
+  }
+
+  /*providing fontsize, letterspacing and font*/
+  h1{
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+  }
+
+  h2{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: 'EB Garamond', serif;
+  }
+
+  p, li{
+    font-size: 10px;
+  }
+
+  /*providing indentations*/
+  section h1 + p, section h2 + p{
+    text-indent: 20px;
+  }
+
+
+  li{
+    list-style: square;
+  }
+
+
+  ul, ol {
+    margin: 2px;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  ol {
+    list-style-type: lower-latin;
+  }
+
+  /*organising the navigation menu*/
+  nav {
+    background-color: rgb(250, 246, 246);
+    height: 100%;
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul{
+    text-align: center;
+    padding: 0;
+  }
+  nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    
+  }
+
+  nav ul a {
+    text-decoration: none;
+    display: block;
+    padding: 35px;
+    font-size: 25px;
+  }
+
+
+
