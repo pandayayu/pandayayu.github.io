@@ -47,20 +47,38 @@
   /*importing the required fonts*/
   /*REFERENCE: https://fonts.google.com/knowledge/using_type/using_web_fonts*/
   @font-face {
-    font-family: 'EB Garamond', serif;
-    font-family: 'Hind Madurai', sans-serif;
-    font-family: 'PT Serif', serif;
-    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind+Madurai:wght@300&family=PT+Serif&display=swap');
-  }
-  
+    font-family: 'lovatolight';
+    src: url('fonts/Lovato-Light-webfont.eot');
+    src: url('fonts/Lovato-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lovato-Light-webfont.woff2') format('woff2'),
+         url('fonts/Lovato-Light-webfont.woff') format('woff'),
+         url('fonts/Lovato-Light-webfont.ttf') format('truetype'),
+         url('fonts/Lovato-Light-webfont.svg#lovatolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'josefin_slabbold';
+    src: url('fonts/josefinslab-bold-webfont.eot');
+    src: url('fonts/josefinslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/josefinslab-bold-webfont.woff2') format('woff2'),
+         url('fonts/josefinslab-bold-webfont.woff') format('woff'),
+         url('fonts/josefinslab-bold-webfont.ttf') format('truetype'),
+         url('fonts/josefinslab-bold-webfont.svg#josefin_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
   /*setting page font size*/
-  html{font-size: 10px;}
+  html{
+    font-size: 10px;
+    font-family: lovatolight, sans-serif;}
 
   /*setting line height for body alongside specifying the font and giving letter-space and word-space*/
   body{
     line-height: 1.2;
-    font-family:'Hind Madurai', sans-serif;
+    font-family:josefin_slabbold, sans-serif;
     letter-spacing: 0.4px; 
     word-spacing: 0.4px;   
   }
@@ -70,17 +88,20 @@
     font-size: 30px;
     letter-spacing: 0.5px;
     text-align: center;
-    font-family: 'EB Garamond', serif;
+    font-family: josefin_slabbold, serif;
   }
 
   h2{
     font-size: 20px;
     letter-spacing: 0.5px;
-    font-family: 'EB Garamond', serif;
+    font-family: josefin_slabbold, serif;
   }
 
   p, li{
     font-size: 10px;
+    line-height:1.2;
+    letter-spacing: 0.5px;
+    line-height: 2px;
   }
 
   /*providing indentations*/
