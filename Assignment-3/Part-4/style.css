@@ -36,6 +36,9 @@ body {
   nav {
     background-color: #000;
     padding: .5em;
+
+    /* making the menu stay at top even after scrolling */
+    /* REFERENCE: https://blog.hubspot.com/website/css-position-sticky#:~:text=A%20sticky%20element%20is%20positioned,boundary%20of%20its%20parent%20element. */
     position: sticky;
     top: 0;
   }
@@ -44,6 +47,8 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    /* displaying in the row with teh space between. */
     display: flex;
     justify-content: space-between;
   }
@@ -58,6 +63,8 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    /* arranging pictures into columns */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5px;
@@ -65,6 +72,8 @@ body {
 
   .feature {
       width: 200px;
+
+      /* making picture stay at left and the text around it */
       float: left;
       margin-right: 1em;
   }
