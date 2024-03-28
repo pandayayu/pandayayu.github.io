@@ -1,3 +1,9 @@
+//////////////////////////////////////////////////////
+// Name: Ayush Panday
+// Course: INFT-1206-05-Web Development Fundamentals
+// This is the main js file for the part two, image gallery.
+/////////////////////////////////////////////////////
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
