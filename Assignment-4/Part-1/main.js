@@ -24,17 +24,18 @@ const insertZ = ["spontaneously combusted","melted into a puddle on the sidewalk
 randomize.addEventListener('click', result);
 
 function result() {
-    newStory = newStory
-                .replaceAll(":insertx:", xItem)
-                .replace(":inserty:", yItem)
-                .replace(":insertz:", zItem);
+    let newStory= storyText;
 
     const xItem = randomValueFromArray(insertX);
     const yItem = randomValueFromArray(insertY);
     const zItem = randomValueFromArray(insertZ);
 
-    newStory= newStory;
+    newStory = newStory
+                .replaceAll(":insertx:", xItem)
+                .replace(":inserty:", yItem)
+                .replace(":insertz:", zItem);
 
+                
   if(customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace("Bob", name);
@@ -52,6 +53,6 @@ function result() {
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
