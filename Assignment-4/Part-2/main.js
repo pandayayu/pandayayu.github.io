@@ -23,7 +23,38 @@ imageFilenames.forEach(filename => {
 newImage.setAttribute('src', "images/"+ filename);
 newImage.setAttribute('alt', altTexts[filename]);
 thumbBar.appendChild(newImage);
-})
+});
+
+//selects all images
+const thumbImages = document.querySelectorAll('.thumb-bar img');
+
+//adding the click event
+thumbImages.forEach(thumbImage => {
+    thumbImage.addEventListener('click', function() {
+      displayedImage.src = this.src;
+      displayedImage.alt = this.alt;
+    });
+});
 
 
 /* Wiring up the Darken/Lighten button */
+
+btn.addEventListener('click', function() {
+
+    //checks and changes the class and changes it from dark to light.
+    if (btn.getAttribute('class') === 'dark') {
+        btn.setAttribute('class', 'light');
+        btn.textContent = 'Lighten';
+
+        //apply overlay to darken
+        overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+    } else {
+
+        //checks and changes button class, this is from light to dark.
+        btn.setAttribute('class', 'dark');
+        btn.textContent = 'Darken';
+
+        //removes the overlay
+        overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
+    }
+});
