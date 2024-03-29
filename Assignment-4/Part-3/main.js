@@ -1,3 +1,11 @@
+
+//////////////////////////////////////////////////////
+// Name: Ayush Panday
+// Course: INFT-1206-05-Web Development Fundamentals
+// This is the main js file for the part three of javascript assignment, bouncing balls.
+/////////////////////////////////////////////////////
+
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
@@ -94,6 +102,8 @@ function loop() {
   
     requestAnimationFrame(loop);
   }
+
+  loop();
   
 
     
