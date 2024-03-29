@@ -1,3 +1,11 @@
+//////////////////////////////////////////////////////
+// Name: Ayush Panday
+// Course: INFT-1206-05-Web Development Fundamentals
+// This is the main js file for the part four of javascript assignment, bouncing balls.
+/////////////////////////////////////////////////////
+
+
+
 // set up canvas
 const para = document.querySelector('p');
 let count = 0;
@@ -27,6 +35,8 @@ function randomRGB() {
 }
 
 class Shape {
+
+    //constructor
     constructor(x, y, velX, velY) {
         this.x = x;
         this.y = y;
@@ -35,8 +45,10 @@ class Shape {
       }
 }
 
-
+//inheriting from shape
 class Ball extends Shape {
+
+    //constructor
   constructor(x, y, velX, velY, color, size) {
     super(x, y, velX, velY);
     this.color = color;
@@ -44,6 +56,7 @@ class Ball extends Shape {
     this.exists = true;
   }
 
+  //the draw method 
   draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
@@ -51,7 +64,10 @@ class Ball extends Shape {
     ctx.fill();
   }
 
+  //update method to update position
   update() {
+
+    //collision handling
     if (this.x + this.size >= width) {
       this.velX = -Math.abs(this.velX);
     }
@@ -68,10 +84,13 @@ class Ball extends Shape {
       this.velY = Math.abs(this.velY);
     }
 
+    //update position of ball
     this.x += this.velX;
     this.y += this.velY;
   }
 
+
+  //the method for sollision detection
   collisionDetect() {
     for (const ball of balls) {
       if (!(this === ball)) {
@@ -89,14 +108,15 @@ class Ball extends Shape {
 
 class EvilCircle extends Shape {
 
+    //constructors
     constructor(x,y) {
         super(x, y, 20,20);
 
-        
+
         this.color = "white";
         this.size = 10;
         
-
+        //adding eventlistner for keyboard controls
         window.addEventListener('keydown', (e) => {
             switch(e.key) {
               case 'a':
@@ -115,6 +135,7 @@ class EvilCircle extends Shape {
           });
     }
 
+    //the method for drawing the evil circle
     draw() {
         ctx.beginPath();
         ctx.strokeStyle = this.color;
@@ -122,7 +143,8 @@ class EvilCircle extends Shape {
         ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
         ctx.stroke();
       }
-    
+      
+      //checks the evil circle is inside boundaries
       checkBounds() {
         if (this.x + this.size >= width) {
           this.x -= this.size;
@@ -141,7 +163,7 @@ class EvilCircle extends Shape {
         }
       }
     
-    
+      //the method to detect collision between the balls and the evil circle
   collisionDetect() {
     for (const ball of balls) {
       if (ball.exists) {
