@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 /* change the background color to required as in site */
 div[class="nav"], article, footer, .secondary {
-  background-color: rgb(227, 230, 227);
+  background-color: rgb(255, 255, 255);
 }
 
 article, footer, .secondary {
@@ -173,7 +173,7 @@ audio {
 /* Comments styling */
 
 .comments {
-  background-color: #def;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
 }
 
