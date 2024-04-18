@@ -50,9 +50,9 @@ p, li, table {
 }
 
 /* || header layout */
-
+/* change the background color to required as in site */
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: rgb(227, 230, 227);
 }
 
 article, footer, .secondary {
