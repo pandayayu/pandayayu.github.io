@@ -12,6 +12,8 @@ This is the index filr for accessibility troubleshooting assignment.
   <head>
     <meta charset="utf-8">
 
+    <!-- ensure proper rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessibility assessment</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
@@ -57,20 +59,24 @@ This is the index filr for accessibility troubleshooting assignment.
         <br><br>
         Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.
         <br><br>
-        <table>
+
+        <!-- add summary -->
+        <table summary = "Wildlife and Bears">
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+
+              <!-- modified the column headers for the info -->
+              <th scope="col">Bear Type</th>
+              <th scope="col">Coat</th>
+              <th scope="col">Adult size</th>
+              <th scope="col">Habitat</th>
+              <th scope="col">Lifespan</th>
+              <th scope="col">Diet</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
+              <th>Wild</th>
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
